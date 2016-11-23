@@ -19,7 +19,7 @@ docker stop $(docker ps -aq)
 echo '####################################################'
 echo 'Removing containers ..'
 echo '####################################################'
-docker rm $(docker ps -aq)
+docker rm -v $(docker ps -aq)
 
 
 # remove all images
